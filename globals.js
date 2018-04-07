@@ -7,4 +7,5 @@ global.location = {
 };
 
 // Some modules expect userAgent to be a string
-global.navigator.userAgent = 'React Native';
+global.navigator = global.navigator || {};
+global.navigator.userAgent = global.navigator.userAgent || "React Native";
